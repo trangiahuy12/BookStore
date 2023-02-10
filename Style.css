@@ -1,0 +1,209 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+#container {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+/* Begin header */
+#header {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 20px 0px;
+	height: 120px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #8B8970;
+	z-index: 2;
+}
+
+#logo-img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	left: 10px;
+}
+
+.header-item {
+	position: absolute;
+	width: 75%;
+	right: 0px;
+	top: 37px;
+}
+
+.header-item .account{	
+	display: inline-block;
+	margin: 0px 15px;
+	float: right;
+}
+
+.header-item .cart {
+	padding: 0px 15px;
+	float: right;
+}
+
+.header-item a {
+	text-decoration: none;
+	color: #000;
+}
+
+#header .header-item > a:hover {
+	opacity: 0.5;
+	color: #fff;
+}
+
+.account .ti-user {
+	margin-left: 20px;
+}
+
+.cart .ti-shopping-cart {
+	margin-left: 6px;
+}
+
+.search-bar {
+	position: absolute;
+	top: 5px;
+	width: 60%;
+	height: 90%;
+	border-radius: 10px;
+}
+
+.search-bar .icon {
+	position: absolute;
+	right: 3px;
+	top: 6px;
+	font-weight: 900;
+}
+
+.search-bar .icon:hover {
+	opacity: 0.6;
+}
+
+.search-input {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+/* End Header */
+
+/* Begin menu */
+
+.menu {
+	width: 100%;
+	height: 46px;
+	text-transform: capitalize;
+	background-color: #CDC9A5;
+	font-size: 20px;
+	z-index: 2;
+}
+
+#slider {
+	background-color: green;
+	border: 1px solid #000000;
+	width: 100%;
+	height: 100px;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	z-index: 2;
+}
+
+
+.body {
+	width: 100%;
+	min-height: 1000px;
+	text-transform: capitalize;
+	font-size: 50px;
+	z-index: 2;
+	background-color: aquamarine;
+}
+
+.contact {
+	background-color: violet;
+	height: 100px;
+}
+
+#footer {
+	width: 100%;
+	min-height: 250px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: grey;
+	z-index: 2;
+}
+/* Begin nav */
+#nav {
+	display: inline-block;
+}
+
+#nav, .subnav {
+	list-style-type: none;
+}
+
+#nav > li {
+	display: inline-block;
+}
+
+#nav li {
+	position: relative;
+}
+
+#nav li:hover .subnav {
+	display: block;
+}
+
+#nav > li > a {
+	color: #000;
+	text-transform: uppercase;
+}
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	line-height: 46px;
+	padding: 0 10px;
+
+}
+
+#nav .subnav {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	min-width: 160px;
+}
+
+#nav .subnav a {
+	color: #000;
+	width: 100%;
+	padding: 0 12px;
+	line-height: 38px;
+
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+	color: #ccc;
+	background-color: #fff;
+	display: inline-block;
+}
+#nav .nav-arround-down {
+	font-size: 14px;
+}
+
