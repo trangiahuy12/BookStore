@@ -8,12 +8,12 @@ html {
 	scroll-behavior: smooth;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.container {
+#container {
 	display: block;
 	width: 100%;
 }
 /* Begin header */
-.header {
+#header {
 	width: 100%;
 	min-height: 250px;
 	font-size: 30px;
@@ -28,7 +28,7 @@ html {
 	height: 100px;
 	float: left;
 }
-.nav {
+#menu {
 	width: 100%;
 	height: 100px;
 	text-transform: capitalize;
@@ -37,14 +37,14 @@ html {
 	z-index: 2;
 }
 
-.slider {
+#slider {
 	background-color: green;
 	border: 1px solid #000000;
 	width: 100%;
 	height: 100px;
 }
 
-.main {
+#main {
 	width: 100%;
 	display: flex;
 	z-index: 2;
@@ -60,12 +60,12 @@ html {
 	background-color: aquamarine;
 }
 
-.contact {
+#contact {
 	background-color: violet;
 	height: 100px;
 }
 
-.footer {
+#footer {
 	width: 100%;
 	min-height: 250px;
 	font-size: 30px;
