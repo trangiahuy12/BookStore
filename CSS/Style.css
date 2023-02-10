@@ -28,7 +28,31 @@ html {
 	height: 100px;
 	float: left;
 }
-#menu {
+
+.social-links ul {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    display: flex;
+    width: 15%;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.right-element {
+    display: inline-flex;
+}
+
+.right-element a {
+    color: black;
+    text-decoration: none;
+}
+
+#nav {
 	width: 100%;
 	height: 100px;
 	text-transform: capitalize;
@@ -75,32 +99,32 @@ html {
 	z-index: 2;
 }
 /* Begin nav */
-#nav {
+#menu {
 	display: inline-block;
 }
 
-#nav, .subnav {
+#menu, .subnav {
 	list-style-type: none;
 }
 
-#nav > li {
+#menu > li {
 	display: inline-block;
 }
 
-#nav li {
+#menu li {
 	position: relative;
 }
 
-#nav li:hover .subnav {
+#menu li:hover .subnav {
 	display: block;
 }
 
-#nav > li > a {
+#menu > li > a {
 	color: #fff;
 	text-transform: uppercase;
 }
 
-#nav li a {
+#menu li a {
 	display: block;
 	text-decoration: none;
 	line-height: 46px;
@@ -108,7 +132,7 @@ html {
 
 }
 
-#nav .subnav {
+#menu .subnav {
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -117,7 +141,7 @@ html {
 	min-width: 160px;
 }
 
-#nav .subnav a {
+#menu .subnav a {
 	color: #000;
 	width: 100%;
 	padding: 0 12px;
@@ -125,13 +149,12 @@ html {
 
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover a {
+#menu > li:hover > a,
+#menu .subnav li:hover a {
 	color: #000;
 	background-color: #ccc;
 	display: inline-block;
 }
-#nav .nav-arround-down {
+#menu .nav-arround-down {
 	font-size: 14px;
 }
-
