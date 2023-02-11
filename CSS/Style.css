@@ -2,62 +2,157 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;
-	font-family: Arial, Helvetica, sans-serif;
 }
 #container {
+	position: relative;
 	display: block;
 	width: 100%;
 }
 /* Begin header */
 #header {
+	position: relative;
+	display: block;
 	width: 100%;
-	min-height: 250px;
-	font-size: 30px;
-	text-align: center;
+	padding: 20px 0px;
+	height: 120px;
+	font-size: 20px;
 	text-transform: uppercase;
-	background-color: grey;
+	background-color: #8B8970;
 	z-index: 2;
 }
 
 #logo-img {
+	position: absolute;
 	width: 100px;
 	height: 100px;
-	float: left;
+	top: 10px;
+	left: 10px;
 }
 
-.social-links ul {
-    list-style: none;
-    list-style-type: none;
-    list-style-position: initial;
-    list-style-image: initial;
-    display: flex;
-    width: 15%;
+.header-item {
+	position: absolute;
+	width: 75%;
+	right: 0px;
+	top: 37px;
 }
 
-.social-links a {
-    color: black;
-    text-decoration: none;
+.header-item .account{	
+	display: inline-block;
+	margin: 0px 15px;
+	float: right;
 }
 
-.right-element {
-    display: inline-flex;
+.header-item .cart {
+	padding: 0px 15px;
+	float: right;
 }
 
-.right-element a {
-    color: black;
-    text-decoration: none;
+.header-item a {
+	text-decoration: none;
+	color: #000;
 }
 
-#nav {
+#header .header-item > a:hover {
+	opacity: 0.5;
+	color: #fff;
+
+}
+
+.account .ti-user {
+	margin-left: 20px;
+}
+
+.cart .ti-shopping-cart {
+	margin-left: 6px;
+}
+
+/* .search-bar {
+	position: absolute;
+	top: 5px;
+	width: 60%;
+	height: 90%;
+	border-radius: 10px;
+}
+
+.search-bar .icon {
+	position: absolute;
+	right: 3px;
+	top: 6px;
+	font-weight: 900;
+}
+
+.search-bar .icon:hover {
+	opacity: 0.6;
+}
+
+.search-input {
 	width: 100%;
-	height: 100px;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #fff;
+} */
+
+.search {
+	position: absolute;
+	top: 60%;
+	left: 76%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	height: 30px;
+	transition: 1s;
+	/* box-shadow: inset 0 5px 5px #ced0df,
+	0 -5px 10px #f3f3f3,
+	inset 0 -5px 5px #eff1f0,
+	0 10px 15px #cdd4de; */
+	border: 2px solid #000;
+	width: 30px;
+	overflow: hidden;
+}
+.icon-for-search {
+	padding: 4px;
+}
+.search input {
+	opacity: 0;
+	transform: translate(-50px);
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 100px;
+	padding: 0 20px;
+}
+.search:focus-within {
+	width: 160px;
+}
+.search:focus-within input {
+	opacity: 1;
+	transform: translate(0);
+}
+#inp-for-search ~ i {
+	opacity: 0;
+	transform: translate(50px);
+	transition: 0.5s;
+}
+#inp-for-search:valid ~ i {
+	opacity: 1;
+	transform: translate(0);
+}
+/* End Header */
+
+/* Begin menu */
+
+.menu {
+	width: 100%;
+	height: 46px;
 	text-transform: capitalize;
-	background-color: yellow;
-	font-size: 50px;
+	background-color: #CDC9A5;
+	font-size: 20px;
 	z-index: 2;
 }
 
@@ -68,7 +163,7 @@ html {
 	height: 100px;
 }
 
-#main {
+.main {
 	width: 100%;
 	display: flex;
 	z-index: 2;
@@ -84,7 +179,7 @@ html {
 	background-color: aquamarine;
 }
 
-#contact {
+.contact {
 	background-color: violet;
 	height: 100px;
 }
@@ -99,32 +194,33 @@ html {
 	z-index: 2;
 }
 /* Begin nav */
-#menu {
+#nav {
 	display: inline-block;
 }
 
-#menu, .subnav {
+#nav, .subnav {
 	list-style-type: none;
 }
 
-#menu > li {
+#nav > li {
 	display: inline-block;
 }
 
-#menu li {
+#nav li {
 	position: relative;
 }
 
-#menu li:hover .subnav {
+#nav li:hover .subnav {
 	display: block;
+
 }
 
-#menu > li > a {
-	color: #fff;
+#nav > li > a {
+	color: #000;
 	text-transform: uppercase;
 }
 
-#menu li a {
+#nav li a {
 	display: block;
 	text-decoration: none;
 	line-height: 46px;
@@ -132,16 +228,18 @@ html {
 
 }
 
-#menu .subnav {
+#nav .subnav {
 	display: none;
 	position: absolute;
 	top: 100%;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	min-width: 160px;
+	z-index: 3;
+
 }
 
-#menu .subnav a {
+#nav .subnav a {
 	color: #000;
 	width: 100%;
 	padding: 0 12px;
@@ -149,12 +247,12 @@ html {
 
 }
 
-#menu > li:hover > a,
-#menu .subnav li:hover a {
-	color: #000;
-	background-color: #ccc;
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+	color: #ccc;
+	background-color: #fff;
 	display: inline-block;
 }
-#menu .nav-arround-down {
+#nav .nav-arround-down {
 	font-size: 14px;
 }

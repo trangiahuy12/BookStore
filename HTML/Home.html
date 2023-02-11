@@ -7,63 +7,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/Style.css">
 	<link rel="stylesheet" href="../themify-icons/themify-icons.css">
-
 </head>
+
 <body>
     <div id="container">
 		<div id="header">
 			<!-- chứa logo, đăng nhập và tìm kiếm và phần đầu trang -->
 			<img id="logo-img" src="../IMAGE/logo-image.jpg" alt="">
-			<div class="social-links">
-				<ul>
-					<li>
-						<a href=""><i class="ti-facebook"></i></a>
-					</li>
 
-					<li>
-						<a href=""><i class="ti-instagram"></i></a>
-					</li>
-
-					<li>
-						<a href=""><i class="ti-youtube"></i></a>
-					</li>
-
-					<li>
-						<a href=""><i class="ti-twitter"></i></a>
-					</li>
-
-				</ul>
-			</div>
-
-			<div class="right-element">
-				<a href="#" class="user-account">
-					<i class="icon ti-user"></i>
-					<form action="">
-						<input type="password" name="" id="" placeholder="Usename">
-						<input type="password" name="" id="" placeholder="Password">
-					</form>
+			<!-- Account & Search & Cart -->
+			<div class="header-item">
+				<a href="#" class="account">
+					<i class="ti-user"><p>Account</p></i>
 				</a>
-
 				<a href="#" class="cart">
-					<i class="icon ti-shopping-cart"></i>
-					<span>:Cart (0 $)</span>
+					<i class="ti-shopping-cart"><p>Cart</p></i>
 				</a>
 
-				<div class="search-bar">
-					<a href="">
-						<i class="search-button ti-search"></i>
-					</a>
-
-					<form action="" class="search-box">
-						<input type="search" name="" id="" class="search-field" placeholder="Search">
-					</form>
+				<!-- <div class="search-bar">
+					<a class="icon" href="#"><i class="ti-search"></i></a>
+					<input class="search-input" type="input" placeholder="Type to search..." >
+				</div> -->
+				<div class="search">
+					<i class="icon-for-search ti-search"></i>
+					<input type="text" name="" id="inp-for-search" required>
+					<i class="icon-for-search ti-arrow-right"></i>
 				</div>
 			</div>
 		</div>
 
-		<div id="nav">
+		<div class="menu">
 			<!-- dùng làm thanh menu -->
-			<ul id="menu">
+			<ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li>
@@ -80,7 +55,6 @@
 				<li><a href="#shop">Shop</a></li>
                 <li><a href="#acticles">Acticles</a></li>
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
 		</div>
 
@@ -88,7 +62,7 @@
 			dùng làm chèn hình ảnh và thông tin một số cuốn sách chạy theo chiều ngang	
 		</div>
 
-		<div id="main">
+		<div class="main">
 			<!-- <div class="menu-left">
 				left
 			</div> -->
@@ -101,7 +75,7 @@
 			</div> -->
 		</div>
 
-		<div id="contact">
+		<div class="contact">
 			Thông tin liên hệ 
 		</div>
 
