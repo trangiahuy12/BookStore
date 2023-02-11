@@ -58,7 +58,6 @@ html {
 }
 
 #header .header-item > a:hover {
-	opacity: 0.5;
 	color: #fff;
 }
 
@@ -199,8 +198,8 @@ html {
 
 #nav > li:hover > a,
 #nav .subnav li:hover a {
-	color: #ccc;
-	background-color: #fff;
+	color: #fff;
+	background-color: #000;
 	display: inline-block;
 }
 #nav .nav-arround-down {
