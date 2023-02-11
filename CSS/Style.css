@@ -115,10 +115,10 @@ html {
 	height: 100px;
 }
 
-.main {
+#main {
 	width: 100%;
-	display: flex;
 	z-index: 2;
+	background-color: #8B8970;
 }
 
 
@@ -205,4 +205,58 @@ html {
 #nav .nav-arround-down {
 	font-size: 14px;
 }
+
+
+/* List Books */
+#main .headline {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 46px 0px;;
+}
+
+.headline p {
+	text-transform: uppercase;
+	font-size: 52px;
+	text-shadow: #CDC9A5;
+	opacity: 0.8;
+}
+
+.wrapper {
+	margin: 0px 62.8px;
+	padding: 0px 20px;
+}
+
+.wrapper .container {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .container .book-item {
+	margin: 0px 15px 25px;
+    padding: 0px 15px;
+}
+
+
+.book-item .book-disc {
+	margin: 20px 0px;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+.book-disc p {
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+.container .book-item img:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+
+
+
 
