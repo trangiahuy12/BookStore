@@ -13,6 +13,10 @@ html {
 	display: block;
 	width: 100%;
 }
+
+.margin-10 {
+	margin: 10px !important;
+}
 /* Begin header */
 #header {
 	position: relative;
@@ -336,8 +340,8 @@ html {
 
 #nav > li:hover > a,
 #nav .subnav li:hover a {
-	color: #ccc;
-	background-color: #fff;
+	color: #fff;
+	background-color: #000000;
 	display: inline-block;
 }
 #nav .nav-arround-down {
@@ -416,10 +420,10 @@ html {
 /* Begin footer */
 #footer {
 	width: 100%;
-	min-height: 250px;
+	min-height: 182px;
 	font-size: 18px;
+	font-weight: initial;
 	text-align: center;
-	text-transform: uppercase;
 	z-index: 2;
 	display: flex;
 	color: #ffffff;
@@ -427,7 +431,6 @@ html {
 }
 #footer div {
 	width: calc(100% / 3);
-	margin: 10px 0;
 }
 #footer div:nth-child(1) {
 	text-align: left;
@@ -446,6 +449,13 @@ html {
 }
 .like-us i {
 	margin: 60px 14px;
+	color: #ffffff;
+}
+.like-us a:hover i {
+	color: #000;
+}
+.contac-info {
+	padding: 10px;
 }
 
 /* Eng footer */
