@@ -33,5 +33,21 @@
             <button type="submit">SUBMIT</button>
         </form>
     </div>
+
+    <script>
+        // Kiem tra so dien thoai
+        function checkLetters(input) {
+            var letters = /^[A-Za-z]+$/;
+            if(input.match(letters)) return true;
+            return false;
+        }
+
+        var phoneNumElement = document.querySelector('input[type="tel"]');
+        phoneNumElement.onblur = function(e) {
+            if (checkLetters(e.target.value)) {
+                alert('The field Phone number must have all units are numbers');
+            }
+        }
+    </script>
 </body>
 </html>
