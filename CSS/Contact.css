@@ -5,7 +5,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.contain{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), #0f0904),  url(../IMAGE/pexels-photo-3640930.jpeg);
