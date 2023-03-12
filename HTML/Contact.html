@@ -104,22 +104,23 @@
 
         // Kiem tra ten
         function checkName(str) {
-            return /^[a-zA-Z ]+$/.test(str);
+            return /^[A-z\s]+$/.test(str);
         }
-        var nameElement = document.querySelector('input[type="text"]');
+        var nameElement = document.querySelector('#name');
         nameElement.onblur = function(e) {
-            if (!checkName(e.target.value)) {
+            if (!checkName(e.target.value) && e.target.value) {
                 alert('Please input field Name alphabets only!');
             }
         }
         
         // Kiem tra email
         function checkMail(email) {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        }
+            // return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            return /[a-zA-Z\._]+@[\w\.-]+/.test(email);
+        }  
         var mailElement = document.querySelector('input[type="email"]');
         mailElement.onblur = function(e) {
-            if (!checkMail(e.target.value)) {
+            if (!checkMail(e.target.value) && e.target.value) {
                 alert('Please input the valid email!');
             }
         }
