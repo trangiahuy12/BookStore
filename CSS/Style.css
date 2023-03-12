@@ -26,7 +26,7 @@ html {
 	height: 120px;
 	font-size: 20px;
 	text-transform: uppercase;
-	background-color: #8B8970;
+	background: linear-gradient(to right, #000000,#616161);
 	z-index: 2;
 }
 
@@ -362,7 +362,8 @@ html {
 	display: flex;
     align-items: center;
     justify-content: center;
-	margin: 46px 0px;
+	margin: 50px 0px;
+    margin-top: 130px;
 }
 .headline p {
 	text-transform: uppercase;
@@ -462,9 +463,9 @@ html {
 /* Start Feedback */
 #comment {
     width: 1012px;
-    height: 478px;
-    margin:0px auto;
-    margin-top:184px;
+    height: 602px;
+    margin: 0px auto;
+    margin-top: 130px;
     margin-bottom: 50px;
 }
 

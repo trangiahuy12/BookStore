@@ -27,6 +27,10 @@ form .heading {
     margin-bottom: 80px;
 }
 form .heading h1 {
+    text-transform: uppercase;
+    font-size: 52px;
+    text-shadow: #CDC9A5;
+    opacity: 0.8;
     color: #fff;
 }
 

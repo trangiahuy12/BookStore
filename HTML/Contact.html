@@ -93,14 +93,15 @@
     <script>
         // Kiem tra so dien thoai
         function checkLetters(str) {
-            return isNaN(str);
+            return /[\d]{10}/.test(str)
         }
 
         var phoneNumElement = document.querySelector('input[type="tel"]');
         phoneNumElement.onblur = function(e) {
-            if (checkLetters(e.target.value)) {
+            if (!checkLetters(e.target.value)) {
                 alert('Please input field phoneNo numbers only!');
             }
+
         }
 
         // Kiem tra ten
