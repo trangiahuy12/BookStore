@@ -12,7 +12,7 @@
 }
 
 .form:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   border: 1px solid black;
 }
 
@@ -68,11 +68,13 @@
   transition: .4s ease-in-out;
   background-color: #252525;
   color: white;
+  transition-duration: 0.5s;
 }
 
 .button1:hover {
   background-color: red;
   color: white;
+  transform: scale(1.3);
 }
 
 .button2 {
@@ -86,10 +88,12 @@
   background-color: #252525;
   color: white;
   margin: 0 10px;
+  transition-duration: 0.5s;
 }
 .button2:hover {
   background-color: red;
   color: white;
+  transform: scale(1.3);
 }
 .button2 a {
   color: white;
@@ -104,9 +108,11 @@
   transition: .4s ease-in-out;
   background-color: #252525;
   color: white;
+  transition-duration: 0.5s;
 }
 
 .button3:hover {
   background-color: red;
   color: white;
+  transform: scale(1.3);
 }

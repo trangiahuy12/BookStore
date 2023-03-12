@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>HOME</title>
+    <link rel="stylesheet" href="../CSS/Team.css">
     <link rel="stylesheet" href="../CSS/Style.css">
-    <link rel="stylesheet" href="../CSS/Account.css">
 	<link rel="stylesheet" href="../themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <div id="container">
 		<div id="header">
+			<!-- chứa logo, đăng nhập và tìm kiếm và phần đầu trang -->
 			<img id="logo-img" src="../IMAGE/logo-image.jpg" alt="">
 
 			<!-- Account & Search & Cart -->
 			<div class="header-item">
-				<a href="../HTML/Sign_in.html" class="account">
+				<a href="./Sign_in.html" class="account">
 					<i class="ti-user"><p>Account</p></i>
 				</a>
 				<a href="#" class="cart">
 					<i class="ti-shopping-cart"><p>Cart</p></i>
 				</a>
+				
 				<div class="search">
 					<i class="icon-for-search ti-search"></i>
 					<input type="text" name="" id="inp-for-search" required>
@@ -33,6 +36,7 @@
 		</div>
 
 		<div id="menu">
+			<!-- dùng làm thanh menu -->
 			<ul id="nav">
                 <li><a href="../HTML/Home.html">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -63,32 +67,15 @@
             </ul>
 		</div>
 
-        <form class="form">
-            <p id="heading">Sign Up</p>
-            <div class="field">
-                <div class="ti-email"></div>
-                <input autocomplete="off" placeholder="Email" class="input-field" type="email">
+		<div class="content">
+            <div class="member">
+                <div class="section">Trần Quang Huy</div>
+                <div class="section">Trần Gia Huy</div>
+                <div class="section">Trần Võ Tuấn Huy</div>
+                <div class="section">Nguyễn Quốc Huỳnh</div>
+                <div class="section">Phạm Đông Khải</div>
             </div>
-            <div class="field">
-                <div class="ti-user"></div>
-                <input autocomplete="off" placeholder="Username" class="input-field" type="text">
-            </div>
-            <div class="field">
-                <div class="ti-lock"></div>
-                <input placeholder="Password" class="input-field" type="password">
-            </div>
-            <div class="field">
-                <div class="ti-lock"></div>
-                <input placeholder="Confirm Password" class="input-field" type="password">
-            </div>
-            <div class="btn">
-                <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                <button class="button2"><a href="./Sign_in.html">Sign In</a></button>
-                <input type="reset" class="button1" value="Reset">
-            </div>
-            <button class="button3">Forgot Password</button>
-        </form>
-
+        </div>
 
 		<div id="footer">
 			<div class="contact-info" style="height:200px">
@@ -97,16 +84,18 @@
 			  <p><i class="margin-10 fa fa-phone" style="width:30px"></i> Phone: +00 151515</p>
 			  <p><i class="margin-10 fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com</p>
 			</div>
+			
 			<div class="like-us" style="height:200px; width: 70%;">
 			  <h2 class="margin-10">Like Us</h2>
-			  <a href=""><i class=" fa fa-facebook-official"></i></a>
-			  <a href=""><i class=" fa fa-pinterest-p"></i></a>
-			  <a href=""><i class=" fa fa-twitter"></i></a>
-			  <a href=""><i class=" fa fa-flickr"></i></a>
-			  <a href=""><i class=" fa fa-linkedin"></i></a>
+			  <a href="https://www.facebook.com/" target="_blank"><i class=" fa fa-facebook-official"></i></a>
+			  <a href="https://www.pinterest.com/" target="_blank"><i class=" fa fa-pinterest-p"></i></a>
+			  <a href="https://twitter.com/" target="_blank"><i class=" fa fa-twitter"></i></a>
+			  <a href="https://www.flickr.com/" target="_blank"><i class=" fa fa-flickr"></i></a>
+			  <a href="https://www.linkedin.com/" target="_blank"><i class=" fa fa-linkedin"></i></a>
 			</div>
-		  </div>
+		</div>
 	</div>
 
+	<script src="../JS/script.js"></script>
 </body>
 </html>
