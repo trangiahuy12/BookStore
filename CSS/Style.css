@@ -134,10 +134,10 @@ html {
 	padding: 0 20px;
 }
 
-.search:hover {
+.search:focus-within {
 	width: 160px;
 }
-.search:hover input {
+.search:focus-within input {
 	opacity: 1;
 	transform: translate(0);
 }
@@ -395,7 +395,10 @@ html {
 }
 
 .book-item img {
-	background: #ccc;
+	width: 273.4px;
+    height: 372.4px;
+    object-fit: cover;
+    background: #ccc;
     padding: 15%;
 }
 
