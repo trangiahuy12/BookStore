@@ -410,7 +410,10 @@ html {
 }
 
 .book-item img {
-	background: #ccc;
+	width: 273.4px;
+    height: 372.4px;
+    object-fit: cover;
+    background: #ccc;
     padding: 15%;
 }
 
