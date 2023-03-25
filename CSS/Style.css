@@ -378,7 +378,6 @@ html {
     align-items: center;
     justify-content: center;
 	margin: 50px 0px;
-    margin-top: 130px;
 }
 .headline p {
 	text-transform: uppercase;
@@ -389,8 +388,7 @@ html {
 
 .wrapper {
 	margin: 0px 62.8px;
-	padding: 0px 20px;
-	height: 1200px;
+    padding: 70px 20px
 }
 
 .wrapper .container {
@@ -407,6 +405,7 @@ html {
 
 .book-item {
 	width:	25%;
+	position: relative;
 }
 
 .book-item img {
@@ -415,7 +414,33 @@ html {
     object-fit: cover;
     background: #ccc;
     padding: 15%;
+	cursor: pointer;
 }
+
+.book-item button {
+	position: absolute;
+	left: 30px;
+	right: 64px;
+	top: 260px;
+	background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3;
+    opacity: 0;
+	transition: 0.5s ease-out;
+}
+
+.book-item:hover button{
+	left: 30px;
+	right: 64px;
+	top: 160px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+
 
 
 .book-item .book-disc {
@@ -435,10 +460,7 @@ html {
 }
 
 
-.container .book-item img:hover {
-	opacity: 0.6;
-	cursor: pointer;
-}
+
 /* End main */
 
 /* Start saleoff */
@@ -484,7 +506,7 @@ html {
     width: 1012px;
     height: 602px;
     margin: 0px auto;
-    margin-top: 130px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -504,6 +526,7 @@ html {
     height: 400px;
     list-style: none;
     overflow: hidden;
+	margin-top: 120px;
 }
 
 #list-comment {
