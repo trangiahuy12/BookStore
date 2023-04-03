@@ -42,7 +42,7 @@
                         <i class="nav-arround-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="#">Romance</a></li>
+                        <li><a href="./Romance.html">Romance</a></li>
                         <li><a href="../HTML/Manga.html">Manga</a></li>
                         <li><a href="#">Fantasy</a></li>
                     </ul>
@@ -51,9 +51,9 @@
 					<i class="nav-arround-down ti-angle-down"></i>
 				</a>
 					<ul class="subnav">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Self-help</a></li>
+                        <li><a href="./Travel.html">Travel</a></li>
+                        <li><a href="./History.html">History</a></li>
+                        <li><a href="./Self-help.html">Self-help</a></li>
                     </ul>
 				</li>
 				<li><a href="#shop">Shop</a></li>
@@ -88,21 +88,39 @@
             </form>
     
         </div>
+
+        <div id="footer">
+			<div class="contact-info" style="height:200px">
+			  <h2 class="margin-10">Contact Info</h2>
+			  <p><i class="margin-10 fa fa-map-marker" style="width:30px"></i> IUH, HCM</p>
+			  <p><i class="margin-10 fa fa-phone" style="width:30px"></i> Phone: +00 151515</p>
+			  <p><i class="margin-10 fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com</p>
+			</div>
+			
+			<div class="like-us" style="height:200px; width: 70%;">
+			  <h2 class="margin-10">Like Us</h2>
+			  <a href="https://www.facebook.com/" target="_blank"><i class=" fa fa-facebook-official"></i></a>
+			  <a href="https://www.pinterest.com/" target="_blank"><i class=" fa fa-pinterest-p"></i></a>
+			  <a href="https://twitter.com/" target="_blank"><i class=" fa fa-twitter"></i></a>
+			  <a href="https://www.flickr.com/" target="_blank"><i class=" fa fa-flickr"></i></a>
+			  <a href="https://www.linkedin.com/" target="_blank"><i class=" fa fa-linkedin"></i></a>
+			</div>
+		</div>
 	</div>
     
 
     <script>
         // Kiem tra so dien thoai
-        function checkLetters(str) {
-            return /[\d]{10}/.test(str)
+        function checkPhone(str) {
+            return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test(str);
         }
 
         var phoneNumElement = document.querySelector('input[type="tel"]');
         phoneNumElement.onblur = function(e) {
-            if (!checkLetters(e.target.value)) {
-                alert('Please input field phoneNo numbers only!');
+           if (e.target.value.length === 0) return;
+            else if (!checkPhone(e.target.value)) {
+                alert('Please input the field phoneNo with valid phone number!');
             }
-
         }
 
         // Kiem tra ten
