@@ -26,10 +26,11 @@
 }
 
 .field {
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.8em;
   border-radius: 25px;
   padding: 0.6em;
   border: none;

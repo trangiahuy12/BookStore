@@ -1,6 +1,6 @@
 * {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -409,7 +409,7 @@ html {
 }
 
 .book-item {
-	width:	25%;
+	/* width:	25%; */
 	position: relative;
 }
 
@@ -424,6 +424,7 @@ html {
 
 .book-item button {
 	position: absolute;
+	width: 80%;
 	left: 30px;
 	right: 64px;
 	top: 260px;
@@ -437,6 +438,7 @@ html {
 }
 
 .book-item:hover button{
+	width: 80%;
 	left: 30px;
 	right: 64px;
 	top: 160px;
