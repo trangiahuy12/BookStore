@@ -64,11 +64,13 @@ html {
 	display: inline;
 	margin: 0px 15px;
 	float: right;
+	color: #fff;
 }
 
 .header-item .cart {
 	padding: 0px 15px;
 	float: right;
+	color: #fff;
 }
 
 .header-item a {
@@ -78,10 +80,8 @@ html {
 }
 
 #header .header-item > a:hover {
-	opacity: 0.5;
-	color: #fff;
-	transform: scale(1.3);
-
+	color: #000;
+    transform: scale(1.2);
 }
 
 .account .ti-user {
@@ -132,12 +132,13 @@ html {
 	0 -5px 10px #f3f3f3,
 	inset 0 -5px 5px #eff1f0,
 	0 10px 15px #cdd4de; */
-	border: 2px solid #000;
+	border: 2px solid #fff;
 	width: 30px;
 	overflow: hidden;
 }
 .icon-for-search {
 	padding: 4px;
+	color: #fff;
 }
 .search input {
 	opacity: 0;
@@ -147,6 +148,7 @@ html {
 	outline: none;
 	width: 100px;
 	padding: 0 20px;
+	color: #fff;
 }
 
 .search:focus-within {
@@ -174,7 +176,7 @@ html {
 	background-image: url(../IMAGE/slideshow/1.jpg);
 	border: 1px solid #000000;
 	width: 100%;
-	height: 500px;
+	height: 550px;
 }
 .item {
 	width: 200px;
@@ -275,12 +277,14 @@ html {
 	width: 100%;
 	height: 46px;
 	text-transform: capitalize;
-	background-color: #CDC9A5;
+	background-color: #ccc;
 	font-size: 20px;
-	z-index: 2;
+	z-index: 11;
 	position:sticky;
 	top: 0;
 	text-align: center;
+	box-shadow: 0px 2px 15px #000;
+
 }
 
 
@@ -310,6 +314,7 @@ html {
 
 #nav, .subnav {
 	list-style-type: none;
+	width: 100%;
 }
 
 #nav > li {
@@ -334,7 +339,7 @@ html {
 	display: block;
 	text-decoration: none;
 	line-height: 46px;
-	padding: 0 10px;
+	padding: 0 30px;
 
 }
 
@@ -343,7 +348,7 @@ html {
 	position: absolute;
 	top: 100%;
 	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
 	min-width: 160px;
 	z-index: 3;
 
@@ -507,7 +512,7 @@ html {
     height: 602px;
     margin: 0px auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 #comment h2 {
@@ -548,6 +553,13 @@ html {
     margin-top:13px;
 }
 
+.avatar img {
+	width: 78px;
+	height: 78px;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
 #list-comment .item-cmt .stars {
     display: flex;
     margin:0px auto;
@@ -567,6 +579,20 @@ html {
     padding:20px 50px;
     color:#fff;
    
+}
+
+.next a img {
+	position: absolute;
+    right: -6px;
+    top: -40px;
+    transform: rotate(90deg);
+}
+
+.prev a img {
+	position: absolute;
+    right: -69px;
+    top: -40px;
+    transform: rotate(90deg);
 }
 /* End Feedback */
 
