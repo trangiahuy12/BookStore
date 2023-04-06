@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/Cart.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <script src="../BOOTSTRAP/js/bootstrap.min.js"></script>
+    <script src="../JQUERY/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <h2 class="text-center" style="margin: 40px 0;">GIỎ HÀNG</h2>
+    <div class="container">
+      <table id="cart" class="table table-hover table-condensed">
+        <thead>
+          <tr>
+            <th style="width: 50%">Tên sản phẩm</th>
+            <th style="width: 10%">Giá</th>
+            <th style="width: 8%">Số lượng</th>
+            <th style="width: 22%" class="text-center">Thành tiền</th>
+            <th style="width: 10%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-th="Product">
+              <div class="row">
+                <div class="col-sm-2 hidden-xs">
+                  <img
+                    src="../IMAGE/fantasy/Babel.jpg"
+                    alt="Sản phẩm 1"
+                    class="img-responsive"
+                    width="100"
+                  />
+                </div>
+                <div class="col-sm-10">
+                  <h4 class="nomargin">Bebel</h4>
+                  <p>R.F Kuang</p>
+                </div>
+              </div>
+            </td>
+            <td data-th="Price">$10.00</td>
+            <td data-th="Quantity">
+              <input class="form-control text-center" value="1" type="number" />
+            </td>
+            <td data-th="Subtotal" class="text-center">$10.00</td>
+            <td class="actions" data-th="">
+              <button class="btn btn-info btn-sm">
+                <i class="ti-pencil-alt"></i>
+              </button>
+              <button class="btn btn-danger btn-sm">
+                <i class="ti-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-th="Product">
+              <div class="row">
+                <div class="col-sm-2 hidden-xs">
+                  <img
+                    src="../IMAGE/history/AllElseFailed.jpg"
+                    alt="Sản phẩm 1"
+                    class="img-responsive"
+                    width="100"
+                  />
+                </div>
+                <div class="col-sm-10">
+                  <h4 class="nomargin">All Else Failed</h4>
+                  <p>Dana Sachs</p>
+                </div>
+              </div>
+            </td>
+            <td data-th="Price">$22.00</td>
+            <td data-th="Quantity">
+              <input class="form-control text-center" value="1" type="number" />
+            </td>
+            <td data-th="Subtotal" class="text-center">$22.00</td>
+            <td class="actions" data-th="">
+              <button class="btn btn-info btn-sm">
+                <i class="ti-pencil-alt"></i>
+              </button>
+              <button class="btn btn-danger btn-sm">
+                <i class="ti-trash"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="visible-xs">
+            <td class="text-center"><strong>Tổng $32.00</strong></td>
+          </tr>
+          <tr>
+            <td>
+              <a href="../HTML/Home.html" class="btn btn-warning"
+                ><i></i> Tiếp tục mua hàng</a
+              >
+            </td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center">
+              <strong>Tổng tiền $32.00</strong>
+            </td>
+            <td>
+              <a href="../HTML/Sign_in.html" class="btn btn-success btn-block">Thanh toán<i></i></a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
