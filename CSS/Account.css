@@ -120,3 +120,9 @@
   color: white;
   transform: scale(1.3);
 }
+
+#username-error, #password-error, #confirm_password-error, #email-error {
+  white-space: nowrap;
+  left: 240px;
+  position: relative;
+}
