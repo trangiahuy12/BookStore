@@ -42,11 +42,11 @@
                 </div>
               </div>
             </td>
-            <td data-th="Price">$10.00</td>
+            <td data-th="Price" id="price1">10.00</td>
             <td data-th="Quantity">
-              <input class="form-control text-center" value="1" type="number" />
+              <input class="form-control text-center" id="quantity1" oninput="myfun()" value="0" type="number" />
             </td>
-            <td data-th="Subtotal" class="text-center">$10.00</td>
+            <td data-th="Subtotal" class="text-center" id="order-price1">$0</td>
             <td class="actions" data-th="">
               <button class="btn btn-info btn-sm">
                 <i class="ti-pencil-alt"></i>
@@ -73,11 +73,11 @@
                 </div>
               </div>
             </td>
-            <td data-th="Price">$22.00</td>
+            <td data-th="Price" id="price2">22.00</td>
             <td data-th="Quantity">
-              <input class="form-control text-center" value="1" type="number" />
+              <input class="form-control text-center" id="quantity2" oninput="myfun()" value="0" type="number" />
             </td>
-            <td data-th="Subtotal" class="text-center">$22.00</td>
+            <td data-th="Subtotal" class="text-center" id="order-price2">$0</td>
             <td class="actions" data-th="">
               <button class="btn btn-info btn-sm">
                 <i class="ti-pencil-alt"></i>
@@ -90,7 +90,7 @@
         </tbody>
         <tfoot>
           <tr class="visible-xs">
-            <td class="text-center"><strong>Tổng $32.00</strong></td>
+            <td class="text-center" id="total-info"><p>Tổng $0</p></td>
           </tr>
           <tr>
             <td>
@@ -100,7 +100,7 @@
             </td>
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center">
-              <strong>Tổng tiền $32.00</strong>
+              <strong id="total">Tổng thành tiền: $0</strong>
             </td>
             <td>
               <a href="../HTML/Sign_in.html" class="btn btn-success btn-block">Thanh toán<i></i></a>
@@ -109,5 +109,30 @@
         </tfoot>
       </table>
     </div>
+
+    <script>
+      function myfun() {
+      var price1 = parseFloat(document.getElementById("price1").innerHTML,2);
+      var price2 = parseFloat(document.getElementById("price2").innerHTML,2);
+      
+      var quantity1 = document.getElementById("quantity1");
+      var valueQuantity1 = parseFloat(quantity1.value);
+      var quantity2 = document.getElementById("quantity2");
+      var valueQuantity2 = parseFloat(quantity2.value);
+
+      var totalOrder1 = price1*valueQuantity1;
+      var totalOrder2 = price2*valueQuantity2;
+      var Order1 = document.getElementById("order-price1");
+      var Order2 = document.getElementById("order-price2");
+      Order1.innerHTML = "$" + totalOrder1.toFixed(2);
+      Order2.innerHTML = "$" + totalOrder2.toFixed(2);
+
+      var total = (price1*valueQuantity1) + (price2*valueQuantity2);
+      var pay1 = document.getElementById("total");
+      var pay2 = document.getElementById("total-info");
+      pay1.innerHTML = "Tổng thành tiền: $" + total.toFixed(2);
+      pay2.innerHTML = "Tổng  $" + total.toFixed(2);
+    }
+  </script>
   </body>
 </html>
