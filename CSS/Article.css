@@ -1,0 +1,73 @@
+#articles
+{
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 101px;
+   margin-bottom: 100px;
+   position: relative;
+}
+
+.article_title
+{
+   text-align: center;
+   margin: 101px 0px;
+}
+.article_title h1
+{
+    position: relative;
+    font-size: 47px;
+    margin: 52px 0;
+    font-size: 52px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+}
+.article_title h1::after
+{
+   content: "";
+   position: absolute;
+   background-color: #333333;
+   height: 6px;
+   width: 30%;
+   bottom: -10px;
+   left: 35%;
+   border-radius: 4px;
+}
+
+.story
+{
+   display: flex;
+   padding: 6px 0;
+   margin: 40px 0;
+}
+
+.story img
+{
+   width: 23%;
+   border: none;
+   border-radius: 6%;
+   margin-right: 25px;
+}
+
+
+
+.im_story
+{
+   width: 42%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.im_story a
+{
+   color: #333;
+   font-size: 25px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.im_story p
+{
+   width: 86%;
+}

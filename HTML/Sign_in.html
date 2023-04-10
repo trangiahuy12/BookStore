@@ -13,60 +13,20 @@
     <script src="../JQUERY/jquery.min.js"></script>
     <script src="../JQUERY/jquery.validate.min.js"></script>
     <script src="../JS/account.js"></script>
+    <script>
+        $(() => {
+            $("#header").load("./Header.html");
+            $("#menu").load("./Menu.html");
+            $("#footer").load("./Footer.html");
+        }) 
+    </script>
 </head>
 
 <body>
     <div id="container">
-		<div id="header">
-			<img id="logo-img" src="../IMAGE/logo-image.png" alt="">
-			<div class="shop_name">𝒜 𝒷ℴℴ𝓀 𝒾𝓈 𝒶 𝒹𝓇ℯ𝒶𝓂 𝓉𝒽𝒶𝓉 𝓎ℴ𝓊 𝒽ℴ𝓁𝒹 𝒾𝓃 𝓎ℴ𝓊𝓇 𝒽𝒶𝓃𝒹</div>
+		<div id="header"></div>
 
-			<!-- Account & Search & Cart -->
-			<div class="header-item">
-				<a href="./Sign_in.html" class="account">
-					<i class="ti-user"><p>Account</p></i>
-				</a>
-				<a href="./Cart.html" class="cart">
-					<i class="ti-shopping-cart"><p>Cart</p></i>
-				</a>
-				<div class="search">
-					<i class="icon-for-search ti-search"></i>
-					<input type="text" name="" id="inp-for-search" required>
-					<i class="icon-for-search ti-arrow-right"></i>
-				</div>
-			</div>
-		</div>
-
-		<div id="menu">
-			<ul id="nav">
-                <li><a href="../HTML/Home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li>
-                    <a href="#">
-                        Fiction
-                        <i class="nav-arround-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="./Romance.html">Romance</a></li>
-                        <li><a href="./Manga.html">Manga</a></li>
-                        <li><a href="./Fantasy.html">Fantasy</a></li>
-                    </ul>
-                </li>
-				<li><a href="#nonfiction">Nonfiction
-					<i class="nav-arround-down ti-angle-down"></i>
-				</a>
-					<ul class="subnav">
-                        <li><a href="./Travel.html">Travel</a></li>
-                        <li><a href="./History.html">History</a></li>
-                        <li><a href="./Self-help.html">Self-help</a></li>
-                    </ul>
-				</li>
-				<li><a href="#shop">Shop</a></li>
-                <li><a href="#acticles">Acticles</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
-                <li><a href="../HTML/Team.html">Members</a></li>
-            </ul>
-		</div>
+		<div id="menu"></div>
 
         <form class="form" onsubmit="sign_in()">
             <p id="heading">Sign In</p>
@@ -87,23 +47,7 @@
         </form>
 
 
-		<div id="footer">
-			<div class="contact-info" style="height:200px">
-			  <h2 class="margin-10">Contact Info</h2>
-			  <p><i class="margin-10 fa fa-map-marker" style="width:30px"></i> IUH, HCM</p>
-			  <p><i class="margin-10 fa fa-phone" style="width:30px"></i> Phone: +00 151515</p>
-			  <p><i class="margin-10 fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com</p>
-			</div>
-			
-			<div class="like-us" style="height:200px; width: 70%;">
-			  <h2 class="margin-10">Like Us</h2>
-			  <a href=""><i class=" fa fa-facebook-official"></i></a>
-			  <a href=""><i class=" fa fa-pinterest-p"></i></a>
-			  <a href=""><i class=" fa fa-twitter"></i></a>
-			  <a href=""><i class=" fa fa-flickr"></i></a>
-			  <a href=""><i class=" fa fa-linkedin"></i></a>
-			</div>
-		  </div>
+		<div id="footer"></div>
 	</div>
 
 </body>
