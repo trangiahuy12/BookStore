@@ -236,6 +236,9 @@ html {
 	animation: showcontent 1s ease-in-out 1 forwards;
 }
 .item .book-des {
+	text-shadow: -3px 3px 2px #000;
+	width: 145%;
+	font-size: x-large;
 	margin: 20px 0;
 	opacity: 0;	
 	animation: showcontent 1s ease-in-out 0.3s 1 forwards;
