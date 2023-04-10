@@ -603,6 +603,7 @@ html {
 
 /* Begin footer */
 #footer {
+	height: 220px;
 	width: 100%;
 	min-height: 182px;
 	font-size: 18px;

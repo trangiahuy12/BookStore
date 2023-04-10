@@ -1,25 +1,81 @@
-.content {
-    width: 100%;
-    height: 400px;
-    position: relative;
-
+body {   
+    font-family:Arial, Helvetica, sans-serif;   
+    font-size:12px;
+}     
+.members {    
+    padding: 15px 15px 25px;    
+    margin:40px auto 0;    
+    text-align: center;    
+    cursor: pointer;    
+    border-radius: 6px;    
+    background:#fff;    
+    border:1px solid  #000;    
+    border-bottom-width: 3px;    
+    position:relative;
+    height: 300px;
+    margin-bottom: 10px;
 }
-.section {
-    width: 57%;
-    height: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    padding: 10px; 
+    
+.members .image{  
+    position: relative;  
+    width:100px;    
+    height:100px;    
+    line-height:70px;    
+    border-radius:4px;    
+    background:#fff;    
+    color: #000;    
+    margin:-48px auto 20px;
 }
-.member {
-    width: 100%;
-    position: relative;
-    display: inline-grid;
-    height: 350px;
-    margin: 25px 0;
-    font-size: 30px;
-	font-weight: bolder;
+.image img {
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+.members h3 {    
+    font-size: 20px;    
+    font-weight:normal;    
+    letter-spacing:0.7px;    
+    position: relative;    
+    margin:20px 0 10px 0;    
+    padding:10px 0;    
+    background:none;    
+    overflow:hidden;    
+    color:#555;
+}
+    
+.members h3:before{        
+    background: #000;    
+    width:0;    
+    height:2px;    
+    position:absolute;    
+    bottom:0;    
+    left:50%;
+}
+.members h3:after{    
+    background: #000;    
+    width:0;    
+    height:2px;    
+    position:absolute;    
+    bottom:0;    
+    right:50%;
+}
+.members:hover h3:after,.members:hover h3:before{    
+    width:100%;
+}
+.members,.image,.members .image i,.members h3:before,.members h3:after,.members .read{    
+    transition: all 0.5s ease-in-out;
+}
+.members p {    
+    font-size: 14px;    
+    margin:0 0 15px;
+}
+.members .read{    
     color: #000;
+}
+@media screen and (max-width: 990px){    
+    .members{        
+        margin:60px auto 0;    
+    }
 }
