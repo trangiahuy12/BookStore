@@ -26,26 +26,26 @@ $(function() {
         },
         messages: {
             "username": {
-                required: "Vui lòng điền tên đăng nhập",
-                minlength: "Vui lòng nhập ít nhất {0} ký tự",
-                maxlength: "Vui lòng nhập tối đa {0} ký tự",
-                alpha_numericRegex:"Chỉ nhập ký tự chữ và số"
+                required: "Please enter your user name",
+                minlength: "Please enter at least {0} characters",
+                maxlength: "Please enter maximum {0} characters",
+                alpha_numericRegex:"Enter only numerics and alphas"
             },
             "password": {
-                required: "Vui lòng điền mật khẩu",
-                minlength: "Vui lòng nhập ít nhất {0} ký tự",
-                maxlength: "Vui lòng nhập tối đa {0} ký tự"
+                required: "Please enter password",
+                minlength: "Please enter at least {0} characters",
+                maxlength: "Please enter maximum {0} characters"
             },
             "confirm_password": {
-                required: "Vui lòng điền xác nhận mật khẩu",
-                minlength: "Vui lòng nhập ít nhất {0} ký tự",
-                maxlength: "Vui lòng nhập tối đa {0} ký tự",
-                equalTo: "Mật khẩu xác nhận phải trùng khớp với mật khẩu"
+                required: "Please enter your password",
+                minlength: "Please enter minimum {0} characters",
+                maxlength: "Please enter maximum {0} characters",
+                equalTo: "The password confirmation must be the same with the password"
             },
             "email": {
-                required: "Vui lòng điền email",
-                maxlength: "Vui lòng nhập tối đa {0} ký tự",
-                email: "Vui lòng điền email hợp lệ <br> ví dụ: example@mail.com",
+                required: "Please fill the email",
+                maxlength: "Please enter maximum {0} characters",
+                email: "Please fill in the valid email <br> ex: example@mail.com",
             }
         },
         submitHandler: function() {
@@ -56,7 +56,7 @@ $(function() {
                 success: function(data)
                 {
                     if (data.errCode == "0") {
-                        alert("Đăng ký thành công");              
+                        alert("Sign up success!");              
                         window.open('https://hantinhcongnghe.com/index', '_parent');                           
                     }else{       
                         alert(data.errCode + " - " + data.errMsg);
@@ -75,11 +75,11 @@ $.validator.addMethod("alpha_numericRegex", function (value, element) {
 });
 
 function sign_up(){
-    alert("Đăng ký thành công");
+    alert("Sign up success!");
     window.location.reload();
 }
 
 function sign_in(){
-    alert("Đăng nhập thành công");
+    alert("Sign in success!");
     window.location.reload();
 }
