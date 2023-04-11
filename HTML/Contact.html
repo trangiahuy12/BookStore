@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/Contact.css">
     <link rel="stylesheet" href="../CSS/Style.css">
 	<link rel="stylesheet" href="../themify-icons/themify-icons.css">
-    <script src="https://kit.fontawesome.com/4753d412b9.js" crossorigin="anonymous"></script>
+    <script src="/JS/font-awsame.js" crossorigin="anonymous"></script>
     <script src="/JQUERY/jquery.min.js"></script>
     <script>
         $(() => {
@@ -79,8 +79,7 @@
         
         // Kiem tra email
         function checkMail(email) {
-            // return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-            return /[a-zA-Z\._]+@[\w\.-]+/.test(email);
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
         }  
         var mailElement = document.querySelector('input[type="email"]');
         mailElement.onblur = function(e) {
