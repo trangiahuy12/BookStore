@@ -17,6 +17,59 @@
             $("#menu").load("./Menu.html");
             $("#footer").load("./Footer.html");
         }) 
+
+        $(document).ready(function () {
+            function checkName() {
+                let ten = $("#name").val();
+                let pattern = /^\D{6,12}$/;
+                if (pattern.test(ten)) {
+                    $("#errName").html("Your name is accepted!");
+                    return true;
+                }
+                else {
+                    $("#errName").html("Your name must have at least 6 letters and at most 12 letters");
+                    return false;
+                }
+            }
+
+            $("#name").keyup(function (e) { 
+                checkName()
+            });
+
+            function checkPhone() {
+                let ten = $("#number").val();
+                let pattern = /^(0)[0-9]{9}$/;
+                if (pattern.test(ten)) {
+                    $("#errNum").html("Your phone is accepted!");
+                    return true;
+                }
+                else {
+                    $("#errNum").html("Your phone must have 10 digit");
+                    return false;
+                }
+            }
+
+            $("#number").keyup(function (e) { 
+                checkPhone();
+            });
+
+            function checkMail() {
+                let ten = $("#email").val();
+                let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (pattern.test(ten)) {
+                    $("#errMail").html("Your email is accepted!");
+                    return true;
+                }
+                else {
+                    $("#errMail").html("Your email is not valid");
+                    return false;
+                }
+            }
+
+            $("#email").keyup(function (e) { 
+                checkMail();
+            });
+        });
     </script>
 </head>
 <body>
@@ -32,15 +85,18 @@
                     <div class="input-group">
                         <input type="text" name="" id="name" required>
                         <label for="name"><i class="fa-solid fa-user"></i> </i>Your Name</label>
+                        <span style="color: red;" id="errName">(*)</span>
                     </div>
                     <div class="input-group">
                         <input type="tel" name="" id="number" required>
                         <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                        <span style="color: red;" id="errNum">(*)</span>
                     </div>
                 </div>
                 <div class="input-group">
                     <input type="email" name="" id="email" required>
                     <label for="email"><i class="fa-solid fa-envelope"></i> Email ID</label>
+                    <span style="color: red;" id="errMail">(*)</span>
                 </div>
                 <div class="input-group">
                     <textarea id="message" rows="8" required></textarea>
@@ -53,40 +109,42 @@
         <div id="footer"></div>
 	</div>
     <script>
-        // Kiem tra so dien thoai
-        function checkPhone(str) {
-            return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test(str);
-        }
-
-        var phoneNumElement = document.querySelector('input[type="tel"]');
-        phoneNumElement.onblur = function(e) {
-           if (e.target.value.length === 0) return;
-            else if (!checkPhone(e.target.value)) {
-                alert('Please input the field phone No with valid phone number!');
-            }
-        }
-
-        // Kiem tra ten
-        function checkName(str) {
-            return /^[A-z\s]+$/.test(str);
-        }
-        var nameElement = document.querySelector('#name');
-        nameElement.onblur = function(e) {
-            if (!checkName(e.target.value) && e.target.value) {
-                alert('Please input field Name alphabets only!');
-            }
-        }
         
-        // Kiem tra email
-        function checkMail(email) {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        }  
-        var mailElement = document.querySelector('input[type="email"]');
-        mailElement.onblur = function(e) {
-            if (!checkMail(e.target.value) && e.target.value) {
-                alert('Please input the valid email!');
-            }
-        }
+
+        // // Kiem tra so dien thoai
+        // function checkPhone(str) {
+        //     return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test(str);
+        // }
+
+        // var phoneNumElement = document.querySelector('input[type="tel"]');
+        // phoneNumElement.onblur = function(e) {
+        //    if (e.target.value.length === 0) return;
+        //     else if (!checkPhone(e.target.value)) {
+        //         alert('Please input the field phone No with valid phone number!');
+        //     }
+        // }
+
+        // // Kiem tra ten
+        // function checkName(str) {
+        //     return /^[A-z\s]+$/.test(str);
+        // }
+        // var nameElement = document.querySelector('#name');
+        // nameElement.onblur = function(e) {
+        //     if (!checkName(e.target.value) && e.target.value) {
+        //         alert('Please input field Name alphabets only!');
+        //     }
+        // }
+        
+        // // Kiem tra email
+        // function checkMail(email) {
+        //     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        // }  
+        // var mailElement = document.querySelector('input[type="email"]');
+        // mailElement.onblur = function(e) {
+        //     if (!checkMail(e.target.value) && e.target.value) {
+        //         alert('Please input the valid email!');
+        //     }
+        // }
     </script>
 </body>
 </html>
